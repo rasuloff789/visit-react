@@ -1,0 +1,67 @@
+.filter-box{
+  margin: auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-box > input {
+  margin: 10px 0;
+}
+
+.user-list{
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  color: white;
+  background-color: #333;
+}
+
+.user-item{
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0;
+  transition: all .3s ease;
+}
+
+.user-item > * {
+  transition: all .3s ease;
+}
+
+.user-item:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+.user-item:hover > * {
+  border-color: #333;
+}
+
+.user-item > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.user-name{
+  padding: 10px 5px;
+  flex-grow: 1;
+  border-right: 1px solid #fff;
+}
+.user-visit{
+  padding: 10px 5px;
+  font-weight: bold;
+  width: 35px;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+.user-score{
+  width: 35px;
+  text-align: center;
+  padding: 10px 5px;
+}
