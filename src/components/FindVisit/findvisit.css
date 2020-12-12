@@ -1,0 +1,46 @@
+.select-box{
+  max-width: 300px;
+  margin: auto;
+}
+
+#select{
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.finded-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #333;
+}
+
+.find-item{
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.find-item:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+.find-date{
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.find-visit , .find-score{
+  flex-shrink: 0;
+  width: 40px;
+  text-align: center;
+  margin: 0 5px;
+}
