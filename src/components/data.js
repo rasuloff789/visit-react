@@ -40,3 +40,8 @@ export let dataUsers = [
     id : 7 , userId : 3 , visitDate : "2020-10-12" , visit : true , score : 1
   }
 ] ;
+
+// export {
+//   people,
+//   dataUsers
+// }

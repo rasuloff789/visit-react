@@ -1,4 +1,4 @@
-import { people , dataUsers } from '/Users/rasulismoilov/Documents/Documents/web-backend/visit/src/components/data.js';
+import { people , dataUsers } from '../data.js';
 
 import { useState } from "react";
 
@@ -25,7 +25,7 @@ function RenderFindVisit() {
       function findUserById(id) {
         return (
           dataUsers.filter(obj => {
-            return obj.userId == id ;
+            return String(obj.userId) === String(id) ;
           })
           )
         }
@@ -53,14 +53,14 @@ function RenderFindVisit() {
             <ul className="finded-list">
             {RenderUserInfo(findedVisitsArray)}
             
-            <li className="find-item">
+            {/* <li className="find-item">
             <span className="find-date">SUMM :</span>
             <span className="find-score">{
               findedVisitsArray.reduce(function(previousValue, currentValue) {
                 return previousValue.score + currentValue.score;
               })
             }</span>
-            </li>
+            </li> */}
             </ul>
             </div>
             );

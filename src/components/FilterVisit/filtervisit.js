@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./filtervisit.css";
-import { people , dataUsers } from '/Users/rasulismoilov/Documents/Documents/web-backend/visit/src/components/data.js';
+import { people , dataUsers } from '../data.js';
 function RenderFilterVisit() {
   
   let TODAY = new Date();
